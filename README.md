@@ -2,7 +2,7 @@
 
 wget -q https://raw.githubusercontent.com/MBMB-Project/MN_Script/master/mbmb.sh
 
-sudo chmod +x mbmb.sh
+chmod +x mbmb.sh
 
 ./mbmb.sh
 

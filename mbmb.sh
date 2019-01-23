@@ -6,11 +6,11 @@ CONFIGFOLDER='/root/.mbmb'
 COIN_DAEMON='mbmbd'
 COIN_CLI='mbmb-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_TGZ='https://github.com/MBMB-Project/MBMB/files/2767381/MBMB_.Daemon_Ubuntu-16.04.tar.gz'
+COIN_TGZ='https://github.com/MBMB-Project/MBMB/files/2787105/MBMB-.Daemon-Ubuntu-16.04.tar.gz'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='mbmb'
-COIN_PORT=11119
-RPC_PORT=11118
+COIN_PORT=2119
+RPC_PORT=2118
 
 NODEIP=$(curl -s4 icanhazip.com)
 
@@ -47,7 +47,7 @@ function download_node() {
   echo -e "${GREEN}Downloading and Installing VPS $COIN_NAME Daemon${NC}"
   cd $TMP_FOLDER >/dev/null 2>&1
   wget -q $COIN_TGZ
-  tar xzvf MBMB_.Daemon_Ubuntu-16.04.tar.gz
+  tar xzvf MBMB-.Daemon-Ubuntu-16.04.tar.gz
   cd rev >/dev/null 2>&1
   chmod +x $COIN_DAEMON $COIN_CLI
   cp $COIN_DAEMON $COIN_CLI $COIN_PATH

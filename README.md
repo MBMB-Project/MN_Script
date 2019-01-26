@@ -1,6 +1,6 @@
 # MN-Setup Guide (Follow below Steps)
 
-wget -q https://raw.githubusercontent.com/MBMB-Project/MN_Script/master/mbmb.sh
+wget https://raw.githubusercontent.com/MBMB-Project/MN_Script/master/mbmb.sh
 
 chmod +x mbmb.sh
 
